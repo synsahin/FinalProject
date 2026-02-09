@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Business/Business.csproj" />
+  <Project Path="ConsolUI/ConsolUI.csproj">
+    <BuildDependency Project="Business/Business.csproj" />
+  </Project>
+  <Project Path="DataAccess/DataAccess.csproj" />
+  <Project Path="Entities/Entities.csproj" />
+</Solution>
