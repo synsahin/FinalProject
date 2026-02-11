@@ -1,13 +1,13 @@
 ﻿using DataAccess.Abstract;
 using Entities.Concrate;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace DataAccess.Concrate.InMemory
-{
+namespace DataAccess.Concrate.InMemory{
 
     public class InMemoryProductDal : IProductDal
     {
@@ -45,6 +45,11 @@ namespace DataAccess.Concrate.InMemory
            _products.Remove(productToDelete);
         }
 
+        public Product Get(Expression<Func<Product, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetAll()
         {
             return _products;
@@ -60,6 +65,11 @@ namespace DataAccess.Concrate.InMemory
             return _products.Where(p=> p. CategoryId== categoryId).ToList();
             //where komutu içindeki elemanları yeni bir liste oluşturur
             //ve onu döndürür.
+        }
+
+        public List<ProductDetailDto> GetProductDetails()
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Product product)

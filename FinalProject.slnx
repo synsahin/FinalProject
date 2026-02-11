@@ -1,8 +1,9 @@
 <Solution>
   <Project Path="Business/Business.csproj" />
-  <Project Path="ConsolUI/ConsolUI.csproj">
+  <Project Path="ConsolUI/ConsoleUI.csproj">
     <BuildDependency Project="Business/Business.csproj" />
   </Project>
+  <Project Path="Core/Core.csproj" Id="50b8c3a2-ea1b-4d8e-81ab-fd498018a007" />
   <Project Path="DataAccess/DataAccess.csproj" />
   <Project Path="Entities/Entities.csproj" />
 </Solution>
