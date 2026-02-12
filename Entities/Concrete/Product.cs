@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Concrate
+namespace Entities.Concrete
 {
     public class Product : IEntity
     {

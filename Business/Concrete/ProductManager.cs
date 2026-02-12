@@ -3,14 +3,13 @@ using Business.Constants;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
-using DataAccess.Concrate.EntityFramework;
-using Entities.Concrate;
+using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business.Concrate
+namespace Business.Concrete
 {
     public class ProductManager : IProductService
     {
@@ -39,7 +38,7 @@ namespace Business.Concrate
         {
             if (DateTime.Now.Hour == 22)
             {
-                return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
+                return new ErrorDataResult<List<Product>>(default, Messages.MaintenanceTime);
             }
 
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductsListed);
@@ -71,7 +70,7 @@ namespace Business.Concrate
         {
             if (DateTime.Now.Hour == 17)
             {
-                return new ErrorDataResult<List<ProductDetailDto>>(Messages.MaintenanceTime);
+                return new ErrorDataResult<List<ProductDetailDto>>(default, Messages.MaintenanceTime);
             }
 
             return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails());

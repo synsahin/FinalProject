@@ -1,11 +1,11 @@
 ﻿using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
-using Entities.Concrate;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataAccess.Concrate.EntityFramework
+namespace DataAccess.Concrete.EntityFramework
 {
     public class EfCategoryDal : EfEntityRepositoryBase<Category, NorthwindContext>, ICategoryDal
     {

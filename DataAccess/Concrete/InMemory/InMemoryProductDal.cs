@@ -1,5 +1,5 @@
 ﻿using DataAccess.Abstract;
-using Entities.Concrate;
+using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,8 @@ using System.Linq.Expressions;
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace DataAccess.Concrate.InMemory{
+namespace DataAccess.Concrete.InMemory
+{
 
     public class InMemoryProductDal : IProductDal
     {

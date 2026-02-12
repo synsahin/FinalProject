@@ -1,10 +1,7 @@
-﻿using Business.Concrate;
-using Business.Concrete;
-using DataAccess.Concrate.EntityFramework;
-using DataAccess.Concrate.InMemory;
-using Entities.Concrate;
+﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
 
-namespace ConsolUI
+namespace ConsoleUI
 
 {
     class Program

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Entities.Concrate
+namespace Entities.Concrete
 {
     public class Customer : IEntity
     {

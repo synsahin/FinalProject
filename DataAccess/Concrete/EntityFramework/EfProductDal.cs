@@ -1,6 +1,6 @@
 ﻿using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
-using Entities.Concrate;
+using Entities.Concrete;
 using Entities.DTOs;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -10,7 +10,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks.Dataflow;
 
-namespace DataAccess.Concrate.EntityFramework
+namespace DataAccess.Concrete.EntityFramework
 {
     public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
     {

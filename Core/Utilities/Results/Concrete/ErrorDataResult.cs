@@ -20,7 +20,7 @@ namespace Core.Utilities.Results.Concrete
         }
         public ErrorDataResult() : base(default, false)
         {
-
+            
         }
     }
 }

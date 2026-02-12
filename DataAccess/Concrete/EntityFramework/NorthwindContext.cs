@@ -1,8 +1,7 @@
-﻿using Entities.Concrate;
-using Entities.Concrete;
+﻿using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess.Concrate.EntityFramework
+namespace DataAccess.Concrete.EntityFramework
 {
     // Context : Db tabloları ile proje classlarını bağlamak.
     public class NorthwindContext : DbContext

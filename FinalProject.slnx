@@ -6,4 +6,5 @@
   <Project Path="Core/Core.csproj" Id="50b8c3a2-ea1b-4d8e-81ab-fd498018a007" />
   <Project Path="DataAccess/DataAccess.csproj" />
   <Project Path="Entities/Entities.csproj" />
+  <Project Path="WebAPI/WebAPI.csproj" Id="19dfe984-632d-47f1-ad7c-aa38df837a60" />
 </Solution>
