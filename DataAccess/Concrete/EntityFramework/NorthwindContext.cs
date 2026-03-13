@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Entities.Concrete;
+using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework
@@ -15,8 +16,13 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet <Order> Orders { get; set; }
-        //DbSet belirlenmesinin amacı dbset tablonun bu verilere bağlı olduğunu söyler,
-        //eğer list olsaydı  gelen çıktılar sadece bellekteki veriler olurdu ve her seferinde SQL yazmak gerekirdi. 
+        public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
 
     }
+    //DbSet belirlenmesinin amacı dbset tablonun bu verilere bağlı olduğunu söyler,
+    //eğer list olsaydı  gelen çıktılar sadece bellekteki veriler olurdu ve her seferinde SQL yazmak gerekirdi. 
+
 }
+

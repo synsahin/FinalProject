@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspect.Autofac;
 using Business.CCS;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
@@ -21,6 +22,7 @@ namespace Business.Concrete
 {
     public class ProductManager(IProductDal productDal,ICategoryService categoryService) : IProductService
     {
+        [SecuredOperation("product.add,admin")]
         [ValidationAspect(typeof(ProductValidator))]
         //ValidationAspect ile attributeler devreye girer 
         //ValidationAspect bir motordur, typeof(ProductValidator) ile ProductValidator sınıfındaki kuralları metoda göre uygular.
@@ -123,6 +125,7 @@ namespace Business.Concrete
             if (result)
             {
                 return new ErrorResult(Messages.ProductNameAllreadyExists);
+                //bu isimde başka bir ürünün olduğunu belirten mesagges ı döndürür.
             }
             return new SuccessResult();
         }
